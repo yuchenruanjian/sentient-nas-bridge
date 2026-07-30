@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.sentient.mac-scanner</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/zhengxiaoyong/.workbuddy/binaries/python/envs/default/bin/python3</string>
+        <string>/Users/zhengxiaoyong/WorkBuddy/Claw/sentient-nas-bridge/scripts/mac_scanner.py</string>
+        <string>--days</string>
+        <string>1</string>
+        <string>--outdir</string>
+        <string>/Users/zhengxiaoyong/WorkBuddy/Claw/sentient-nas-bridge/knowledge</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/zhengxiaoyong/WorkBuddy/Claw/sentient-nas-bridge</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PYTHONPATH</key>
+        <string>/Users/zhengxiaoyong/WorkBuddy/Claw/sentient-nas-bridge</string>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/tmp/sentient_scanner.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/sentient_scanner.err</string>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>3</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+    <key>KeepAlive</key>
+    <false/>
+</dict>
+</plist>
