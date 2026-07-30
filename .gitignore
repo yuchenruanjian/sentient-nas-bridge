@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local config (contains NAS credentials)
+config/local.yaml
+config/*.secret
+
+# SentientOS output (produced by sync)
+sentient_data/
+nas_cache/
+
+# WorkBuddy local
+.workbuddy/

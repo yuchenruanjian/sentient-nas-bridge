@@ -1,0 +1,33 @@
+# NAS 配置模板
+# 复制为 config/local.yaml 并填入真实配置
+
+nas:
+  # NAS 在 Mac 上的挂载路径
+  mount_point: "/Volumes/NAS"
+  # NAS SMB/AFP 地址  
+  smb_url: "smb://your-nas-ip/knowledge"
+  # 知识库存放目录（NAS 上的相对路径）
+  knowledge_base_path: "sentient-nas-bridge/knowledge"
+
+sentient:
+  # SentientOS 输出目录（本地）
+  output_dir: "~/SentientOS/glow"
+  # 监听文件扩展名
+  watch_patterns:
+    - "*.md"
+    - "*.json"
+    - "*.yaml"
+
+sync:
+  # 同步间隔（秒）
+  interval: 3600
+  # 启动时立即同步
+  sync_on_start: true
+  # 双向同步（NAS ↔ 本地）
+  bidirectional: true
+  
+workbuddy:
+  # WorkBuddy 记忆目录
+  memory_dir: "/Users/zhengxiaoyong/WorkBuddy/Claw/.workbuddy/memory"
+  # 是否自动注入 Sentient 摘要到对话上下文
+  auto_context_injection: true
